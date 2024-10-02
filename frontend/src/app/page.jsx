@@ -3,6 +3,7 @@ import React from "react";
 import { Boxes } from "../components/ui/aurora-background";
 import { cn } from "@/lib/utils";
 import Link from "next/link";
+import Chatbot from "@/components/ui/Chatbot";
 
 function BackgroundBoxesDemo() {
   return (
@@ -24,6 +25,7 @@ function BackgroundBoxesDemo() {
           </button>
         </Link>
       </div>
+      
     </>
   );
 }

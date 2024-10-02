@@ -3,6 +3,7 @@ import React, { useState } from "react";
 import { motion, useScroll, useTransform, useSpring } from "framer-motion";
 import Image from "next/image";
 import Link from "next/link";
+import Chatbot from "./Chatbot";
 
 export const HeroParallax = ({ products }) => {
   const firstRow = products.slice(0, 5);
@@ -76,7 +77,8 @@ export const Header = ({ onClick }) => {
         The Policy <br /> Insurance Platform
       </h1>
       <p className="max-w-2xl text-base md:text-xl mt-8 dark:text-neutral-200">
-        We build beautiful products with the latest technologies and frameworks. We are a team of passionate developers and designers that love to build amazing products.
+        
+This AI-driven insurance website offers a chatbot for assistance, a quiz to recommend suitable policies, an "Easy Language" feature to simplify policy terms, and an AI-powered tool that auto-fills forms based on user input, making the insurance process simple and user-friendly.
       </p>
       <div>
         <Link href='/CardHover'>
@@ -85,6 +87,7 @@ export const Header = ({ onClick }) => {
           </button>
         </Link>
       </div>
+      <Chatbot />
     </div>
   );
 };
